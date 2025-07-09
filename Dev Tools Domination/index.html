@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Console Tricks!</title>
+    <link rel="icon" href="https://fav.farm/🔥" />
+  </head>
+  <body>
+    <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+    <script>
+      const friends = [
+        { name: "khalid", age: 28 },
+        { name: "blessing", age: 26 },
+      ];
+
+      function makeGreen() {
+        const p = document.querySelector("p");
+        p.style.color = "#BADA55";
+        p.style.fontSize = "50px";
+      }
+
+      // Regular
+      console.log("hello");
+
+      // Interpolated
+      console.log("Coding can be %s some times!", "stressful");
+
+      // Styled
+      console.log(
+        "%c but still we dey push am",
+        "font-size:14px; background: grey; text-shadow: 10px 10px 0 blue"
+      );
+
+      // warning!
+      console.warn("No go der");
+
+      // Error :|
+      console.error("Ee don red!");
+
+      // Info
+      console.info("Nothing sweet pass rice");
+
+      // Testing
+      const p = document.querySelector("p");
+
+      console.assert(p.classList.contains("ee dey?"), "Ee no dey!");
+
+      // clearing
+      console.clear();
+
+      // Viewing DOM Elements
+      console.log(p);
+      console.dir(p);
+
+      console.clear();
+
+      // Grouping together
+      friends.forEach((friend) => {
+        console.groupCollapsed(`${friend.name}`);
+        console.log(`This is ${friend.name}`);
+        console.log(`${friend.name} is ${friend.age} years old`);
+        console.log(`${friend.name} is ${friend.age + 1} years old`);
+        console.groupEnd(`${friend.name}`);
+      });
+
+      // counting
+
+      console.count("Owen");
+      console.count("Owen");
+      console.count("Dapo");
+      console.count("Dapo");
+      console.count("Dapo");
+      console.count("Owen");
+      console.count("Dapo");
+      console.count("Owen");
+      console.count("Owen");
+      console.count("Owen");
+      console.count("Dapo");
+      console.count("Dapo");
+
+      // timing
+      console.time("fetching data");
+      fetch("https://api.github.com/users/wesbos")
+        .then((data) => data.json())
+        .then((data) => {
+          console.timeEnd("fetching data");
+          console.log(data);
+        });
+
+      console.table(friends);
+    </script>
+  </body>
+</html>
