@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JavaScript Challenge - 30 vanilla JS projects</title>
+<meta name="description" content="Thirty small vanilla-JavaScript projects, one per folder. No framework, no build step.">
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --line: #21262d; --ink: #e6edf3;
+    --dim: #8b949e; --accent: #58a6ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 56px 20px 72px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 28px; margin-bottom: 36px; }
+  h1 { margin: 0 0 10px; font-size: clamp(28px, 4vw, 42px); letter-spacing: -0.02em; }
+  .lede { color: var(--dim); max-width: 62ch; margin: 0 0 18px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px 18px; color: var(--dim); font-size: 14px; }
+  .meta a { color: var(--accent); text-decoration: none; }
+  .meta a:hover { text-decoration: underline; }
+  .note {
+    margin: 0 0 30px; padding: 12px 16px; border: 1px solid var(--line);
+    border-left: 3px solid var(--accent); border-radius: 6px;
+    background: var(--panel); color: var(--dim); font-size: 14px;
+  }
+  .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+  .card {
+    display: flex; align-items: center; gap: 12px; padding: 14px 16px;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+    color: var(--ink); text-decoration: none; transition: border-color .15s, transform .15s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .num { color: var(--dim); font-variant-numeric: tabular-nums; font-size: 13px; min-width: 22px; }
+  .name { flex: 1; }
+  .go { color: var(--accent); opacity: 0; transition: opacity .15s; }
+  .card:hover .go { opacity: 1; }
+  footer { margin-top: 44px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--dim); font-size: 14px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>JavaScript Challenge</h1>
+      <p class="lede">Thirty small vanilla-JavaScript projects, one per folder - the JavaScript30
+      syllabus: drum kit, CSS variables, array cardio, canvas, speech synthesis, geolocation,
+      webcam, whack-a-mole and the rest. No framework, no build step: open one and it runs.</p>
+      <div class="meta">
+        <span>30 projects</span>
+        <span>Vanilla JS (ES6+), HTML, CSS</span>
+        <a href="https://github.com/Owen5e/JavaScript-challenge">Source on GitHub</a>
+        <a href="https://owenstack.com">owenstack.com</a>
+      </div>
+    </header>
+
+    <p class="note">A few demos ask for permission - allow location, microphone or camera when the
+    browser prompts (they run over HTTPS here, which those APIs require).</p>
+
+    <main class="grid">
+      <a class="card" href="Adding%20Up%20Times%20with%20Reduce/">
+        <span class="num">01</span>
+        <span class="name">Adding Up Times with Reduce</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Array%20Cardio%20Day%201/">
+        <span class="num">02</span>
+        <span class="name">Array Cardio Day 1</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Array%20Cardio%20Day%202/">
+        <span class="num">03</span>
+        <span class="name">Array Cardio Day 2</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="CSS%20Variables/">
+        <span class="num">04</span>
+        <span class="name">CSS Variables</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Click%20and%20Drag/">
+        <span class="num">05</span>
+        <span class="name">Click and Drag</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Countdown%20Timer/">
+        <span class="num">06</span>
+        <span class="name">Countdown Timer</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Custom%20Video%20Player/">
+        <span class="num">07</span>
+        <span class="name">Custom Video Player</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Dev%20Tools%20Domination/">
+        <span class="num">08</span>
+        <span class="name">Dev Tools Domination</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Event%20Capture%2C%20Propagation%2C%20Bubbling%20and%20Once/">
+        <span class="num">09</span>
+        <span class="name">Event Capture, Propagation, Bubbling and Once</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Flex%20Panel%20Gallery/">
+        <span class="num">10</span>
+        <span class="name">Flex Panel Gallery</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Follow-Along%20Link%20Highlighter/">
+        <span class="num">11</span>
+        <span class="name">Follow-Along Link Highlighter</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Fun%20with%20HTML5%20Canvas/">
+        <span class="num">12</span>
+        <span class="name">Fun with HTML5 Canvas</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Geolocation/">
+        <span class="num">13</span>
+        <span class="name">Geolocation</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Hold%20Shift%20and%20Check%20Checkboxes/">
+        <span class="num">14</span>
+        <span class="name">Hold Shift and Check Checkboxes</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="JS%20and%20CSS%20Clock/">
+        <span class="num">15</span>
+        <span class="name">JS and CSS Clock</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="JavaScript%20DrumKit/">
+        <span class="num">16</span>
+        <span class="name">JavaScript DrumKit</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="JavaScript%20References%20VS%20Copying/">
+        <span class="num">17</span>
+        <span class="name">JavaScript References VS Copying</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Key%20Sequence%20Detection/">
+        <span class="num">18</span>
+        <span class="name">Key Sequence Detection</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="LocalStorage/">
+        <span class="num">19</span>
+        <span class="name">LocalStorage</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Mouse%20Move%20Shadow/">
+        <span class="num">20</span>
+        <span class="name">Mouse Move Shadow</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Slide%20in%20on%20Scroll/">
+        <span class="num">21</span>
+        <span class="name">Slide in on Scroll</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Sort%20Without%20Articles/">
+        <span class="num">22</span>
+        <span class="name">Sort Without Articles</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Speech%20Detection/">
+        <span class="num">23</span>
+        <span class="name">Speech Detection</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Speech%20Synthesis/">
+        <span class="num">24</span>
+        <span class="name">Speech Synthesis</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Sticky%20Nav/">
+        <span class="num">25</span>
+        <span class="name">Sticky Nav</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Stripe%20Follow%20Along%20Nav/">
+        <span class="num">26</span>
+        <span class="name">Stripe Follow Along Nav</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Type%20Ahead/">
+        <span class="num">27</span>
+        <span class="name">Type Ahead</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Video%20Speed%20Controller/">
+        <span class="num">28</span>
+        <span class="name">Video Speed Controller</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Webcam%20Fun/">
+        <span class="num">29</span>
+        <span class="name">Webcam Fun</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+      <a class="card" href="Whack%20A%20Mole/">
+        <span class="num">30</span>
+        <span class="name">Whack A Mole</span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
+    </main>
+
+    <footer>Built as part of an 84-day public build streak. Each folder is a self-contained
+    exercise: <code>index.html</code> plus its own CSS and script assets.</footer>
+  </div>
+</body>
+</html>
