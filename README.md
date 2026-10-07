@@ -6,7 +6,7 @@ rest. No framework, no build step: open a project and it runs.
 
 | | |
 | --- | --- |
-| **Live gallery** | not yet — a root gallery plus GitHub Pages is the next scheduled step |
+| **Live gallery** | https://owen5e.github.io/JavaScript-challenge/ |
 | **Stack** | vanilla JavaScript (ES6+), HTML, CSS; browser-sync for three of the demos |
 | **Repo** | https://github.com/Owen5e/JavaScript-challenge |
 
@@ -60,7 +60,8 @@ npm start                # browser-sync start --directory --server --files "*.cs
   `package.json` in each folder is all that needs to stay.
 - There is no root `.gitignore`, and until now no README — so the GitHub repo page opened straight
   onto a list of 30 folders with no explanation.
-- No root gallery page: reaching a project means knowing its folder name. That is the next task.
+- ~~No root gallery page~~ — a root gallery plus GitHub Pages shipped on day 15: every project
+  is reachable from https://owen5e.github.io/JavaScript-challenge/
 - No tests, no linting and no CI in this repo — it is a collection, not an application.
 - Folder names contain spaces, which means URL-encoded links (`Webcam%20Fun/index.html`) — worth
   knowing before wiring up a gallery.
